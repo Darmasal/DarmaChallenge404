@@ -28,14 +28,6 @@
         font-family: "Poppins", sans-serif;
       }
 
-      ul {
-        padding-left: 24px;
-      }
-
-      li {
-        margin-bottom: 8px;
-      }
-
       .welcome {
         max-width: 800px;
         margin: 0 auto;
@@ -55,41 +47,90 @@
         font-size: 1.5rem;
       }
 
-      .welcome-text a {
-        color: #f7542e;
+      .problems a {
+        margin-top: 300px;
+        padding: 20px; 
+        color: rgb(209, 209, 209); 
+        background-color: dimgray; 
+        border:2px; 
+        border-color:rgb(189, 188, 188) ;  "
       }
+      img {
+        width:50%;
+        float:left;
+        margin-right: 50px;
+      }
+
+
+      @media only screen and (max-width: 600px) {
+
+         .welcome-text {
+          margin-top: 10vh;
+          font-weight: 400;
+         }
+
+         .welcome-text p {
+          font-size: 0.75rem;
+          font-weight: 300;
+          display: block;
+         }
+
+         .welcome-text h1 {
+          font-size: 1.0rem;
+         }
+
+         .problems {
+          margin-top: 30px;
+          max-width: 100%;
+          margin: 0 auto;
+        }
+         img{ 
+         width:100%;
+         margin-bottom: 30px;
+        }
+        .problems a {
+         padding: 20px; 
+         color: rgb(209, 209, 209); 
+         background-color: dimgray; 
+         border:2px; 
+         border-color:rgb(189, 188, 188) ;
+         font-size: 0.75rem;
+      }
+}
     </style>
   </head>
   <body>
-    <div class="welcome">
-      <div class="welcome-text">
-        <h1>
-          Welcome to
-          <a href="https://devchallenges.io/" target="_blank"
-            >devchallenges.io</a
-          >
-        </h1>
+    <div class="top">
 
+    </div>
+    <div class="welcome">
+      <h5>
+        404 NOT FOUND
+      </h5>
+
+ 
+
+      <div class="welcome-text">
+
+        <img src="Scarecrow.png">
+
+        <div class="problems">
+        <h1>
+          I have bad news for you
+        </h1>
         <p>
-          If you have any questions, don't hesitate to ask on Discord. Here are
-          7 general steps to complete the challenge:
+          The page you are looking
+          for might be removed or is
+          temporaly unavailable
         </p>
+        <br>
+        <a href="" >
+          BACK TO HOMEPAGE
+        </a>
       </div>
 
-      <ul>
-        <li><b>Step 1:</b> Create a new repository on github</li>
-        <li><b>Step 2:</b> Copy resources, README.md to your repository</li>
-        <li>
-          <b>Step 3:</b> Login to Figma to checkout font, color, spacing,..
-        </li>
-        <li><b>Step 4:</b> Complete all user stories</li>
-        <li><b>Step 5:</b> Update README.md</li>
-        <li><b>Step 6:</b> Deploy your app and submit your solution</li>
-        <li>
-          <b>Step 7:</b> Share your solution on Discord, Twitter and other
-          platforms to ask for feedback
-        </li>
-      </ul>
+      </div>
+
     </div>
   </body>
 </html>
